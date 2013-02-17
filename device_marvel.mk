@@ -51,6 +51,10 @@ PRODUCT_COPY_FILES += \
     device/htc/marvel/init.marvel.rc:root/init.marvel.rc \
     device/htc/marvel/ueventd.marvel.rc:root/ueventd.marvel.rc
 
+# For emmc phone storage
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.phone_storage=0
+
 ### Add additional packages
 PRODUCT_PACKAGES += \
     Torch
