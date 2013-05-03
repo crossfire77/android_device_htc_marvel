@@ -46,6 +46,10 @@ PRODUCT_COPY_FILES += \
     device/htc/marvel/key/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
     device/htc/marvel/key/cy8c-touchscreen.kl:system/usr/keylayout/cy8c-touchscreen.kl
 
+## Temp fix for Akmd
+PRODUCT_COPY_FILES += \
+    device/htc/marvel/bin/linker:system/bin/linker
+
 ### Ramdisk
 PRODUCT_COPY_FILES += \
     device/htc/marvel/init.marvel.rc:root/init.marvel.rc \
@@ -57,6 +61,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 ### Add additional packages
 PRODUCT_PACKAGES += \
+    Email2 \
+    Exchange2 \
     Torch
 
 # Add device specific modules ## Build for now from msm7x27-common
